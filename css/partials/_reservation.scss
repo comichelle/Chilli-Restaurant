@@ -1,0 +1,141 @@
+/********************************
+		   RESERVATION 
+********************************/
+
+.reservations {
+	background-image: url("../assets/header-background.jpg");
+	text-align: center;	
+	color: $white;
+	padding: 40px 0 60px 0;
+}
+
+.reservations form {
+	margin-top: 50px;
+	text-align: left;
+}
+
+.input_text {
+	margin-bottom: 30px;
+	margin-right: 25px;
+	border: none;
+	width: 327.5px;
+	height: 30px;
+	padding-left: 15px;
+	color: #000;
+	font-size: 12px;
+	font-style: italic;
+}
+
+.input_text_third {
+	margin-bottom: 30px;
+	border: none;
+	width: 327.5px;
+	height: 30px;
+	padding-left: 13px;
+	color: #000;
+	font-size: 12px;
+	font-style: italic;
+}
+
+.input_text_small {
+	margin-bottom: 30px;
+	margin-right: 25px;
+	border: none;
+	width: 236.5px;
+	height: 30px;
+	padding-left: 14px;
+	color: #000;
+	font-size: 12px;
+	font-style: italic;
+}
+
+.reservations button {
+	background-color: #ff514a;
+	cursor: pointer;
+	width: 155px;
+	height: 30px;
+	border: none;
+	color: white;
+	font-size: 12px;
+}
+
+
+
+
+
+
+
+//**************************
+//     MEDIA QUERIES
+//**************************
+
+
+@media (max-width: 1060px) {
+	.reservations {
+		padding: 60px 20px 100px 20px;
+	}
+
+	.reservations form {
+		width: 40%;
+		margin: 0 auto;
+		margin-top: 50px;
+	}
+
+	.input_text {
+		width: 100%;
+	}
+
+	.input_text_third {
+		width: 100%;
+	}
+
+	.input_text_small {
+		width: 100%;
+	}
+
+	.reservations button {
+		float: right;
+	}
+	
+}
+
+
+@media (max-width: 880px) {
+	.reservations form {
+		width: 50%;
+		margin: 0 auto;
+		margin-top: 50px;
+	}
+}
+
+
+
+@media (max-width: 625px) {
+	.reservations form {
+		width: 60%;
+		margin: 0 auto;
+		margin-top: 50px;
+	}
+}
+
+
+// 	Breakpoint Mobile //
+
+@media (max-width: 540px) {
+	.reservations form {
+		width: 80%;
+		margin: 0 auto;
+		margin-top: 50px;
+	}
+	
+}
+
+
+@media (max-width: 380px) {
+	.reservations form {
+		width: 100%;
+		margin: 0 auto;
+		margin-top: 50px;
+	}
+	
+}

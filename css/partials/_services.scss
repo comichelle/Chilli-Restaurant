@@ -1,0 +1,92 @@
+//*******************************
+//		    SERVICES 
+//********************************
+
+.services {
+	background-color: #f5f5f5;
+	padding: 40px 0 60px 0;
+	text-align: center;	
+}
+
+p.subhead_services {
+	color: #939393;
+	padding: 0 250px;
+	line-height: 22px;
+}
+
+.service_icons {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.service_categories {
+	background-color: #fff;
+	width: 26%;
+	height: 130px;
+	margin: 0 10px;
+	margin-top: 130px;
+}
+
+.service_categories img {
+	position: relative;
+	top: -64px;
+}
+
+.paragraph p {
+	position: relative;
+	top: -40px;
+	text-transform: uppercase;
+	font-weight: 800;
+	letter-spacing: 1px;
+}
+
+
+
+
+
+//**************************
+//     MEDIA QUERIES
+//**************************
+
+
+
+
+@media (max-width: 1005px) {
+	p.subhead_services {
+		padding: 0 200px;
+	}
+}
+
+
+@media (max-width: 880px) {
+	p.subhead_services {
+		padding: 0 100px;
+	}
+}
+
+
+
+@media (max-width: 680px) {
+	.service_icons {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.service_categories {
+		width: 250px;
+		height: 140px;
+	}
+}
+
+
+// 	Breakpoint Mobile //
+
+@media (max-width: 540px) {
+	p.subhead_services {
+		padding: 0 50px;
+	}
+	
+}
+

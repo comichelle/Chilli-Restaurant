@@ -1,0 +1,107 @@
+/********************************
+			MENU PAGE
+********************************/
+
+section.breakfast, section.lunch, section.dinner, section.wine {
+	padding: 40px 10px;
+	padding-left: 50px;
+}
+
+
+.col {
+	display: flex;
+	flex-direction: row;
+}
+
+.columns {
+	font-size: 21px;
+	padding-left: 80px;
+}
+
+.columns:first-child {
+	font-size: 21px;
+	padding-left: 0px;
+}
+
+
+.columns ul {
+	padding: 0;
+}
+
+
+.columns ul li:nth-child(even) {
+	margin-bottom: 20px;
+}
+
+.columns ul li:nth-child(odd) {
+	margin-bottom: -5px;
+}
+
+span.price {
+	float: right;
+	font-style: italic;
+	margin-left: 0;
+}
+
+span.descrip {
+	font-size: 14px;
+	color: gray;
+	margin: 5px 0 5px 5px;
+	font-style: italic;
+}
+
+.food_images img {
+	float: left;
+	width: 25%;
+
+}
+
+
+.food_images img {
+	max-width: 100%;
+}
+
+
+
+
+
+
+//**************************
+//     MEDIA QUERIES
+//**************************
+
+@media (max-width: 1020px) {
+	.columns {
+		padding-left: 50px;
+	}
+
+	section.breakfast, section.lunch, section.dinner, section.wine {
+		padding: 40px 0px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+
+@media (max-width: 970px) {
+	.columns {
+		padding-left: 40px;
+	}
+}
+
+@media (max-width: 920px) {
+	.col {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.columns {
+		padding-left: 0px;
+	}
+
+	section.breakfast, section.lunch, section.dinner, section.wine {
+		width: 302px;
+		margin: 0 auto;
+	}
+}
+

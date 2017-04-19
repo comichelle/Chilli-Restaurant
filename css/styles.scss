@@ -1,0 +1,221 @@
+@import 'partials/setup';
+@import 'partials/variables';
+@import 'partials/header';
+@import 'partials/about';
+@import 'partials/specials';
+@import 'partials/reservation';
+@import 'partials/services';
+@import 'partials/footer';
+
+@import 'partials/menu';
+@import 'partials/events';
+
+
+
+/***********************
+	Global Styles
+***********************/
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 15px;
+}
+
+.wrapper {
+	max-width: $wrapperWidth;
+	margin: 0 auto;
+}
+ p {
+ 	margin: 0;
+ }
+
+ul {
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul li {
+	text-decoration: none;
+	list-style: none;
+}
+
+img.divider {
+	margin: 0px 0 15px;
+}
+
+::-webkit-input-placeholder {
+   color: black;
+}
+
+.price {
+	float: right;
+	font-style: italic;
+}
+
+.subhead {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 14px;
+}
+
+
+
+
+/************************
+         Subpages
+************************/
+
+header.subpage {
+	background-image: url("../assets/header-background.jpg");
+	height: 310px;
+	background-repeat: no-repeat;
+}
+
+
+/****** TITLE ******/
+
+
+
+.title {
+	text-align: center;
+	margin-top: 30px;
+}
+
+.title h2 {
+	font-family: 'Aguafina Script', cursive;
+	font-weight: normal;
+	font-size: 45px;
+	color: white;
+}
+
+.title ul {
+	padding: 0;
+}
+
+.title ul li {
+	display: inline-block;
+	color: white;
+	padding: 0 5px;
+	font-size: 15px;
+}
+
+
+
+
+
+
+/************************
+    Link/Anchor Colours
+************************/
+
+a {
+    text-decoration: none;
+	color: $white;
+	outline: none;
+	border: none;
+}
+
+a:visited {
+	color: $white; 
+}
+
+a:link {
+	color: $white;
+}
+
+a.email_top {
+	color: $lightgrey;
+}
+
+
+a.support {
+	color: $lightgrey;
+}
+
+
+/***********************
+	  HEADER STYLES
+***********************/
+
+h1 {
+	font-family: 'Aguafina Script', cursive;
+	font-size: 62px;
+	font-weight: normal;
+	word-spacing: 15px;
+	margin: 0;
+}
+
+h2 {
+	font-family: 'Aguafina Script', cursive;
+	font-weight: normal;
+	font-size: 55px;
+	margin: 0;
+}
+
+h3 {
+	font-family: 'Aguafina Script', cursive;
+	font-weight: normal;
+	font-size: 40px;
+	margin: 0;
+}
+
+
+h4 {
+	font-family: 'Source Sans Pro', sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 20px;
+	margin: 0;
+	padding: 20px 0;
+}
+
+h5 {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: normal;
+	font-size: 17px;
+	color: #fff;
+	margin: 0;
+	margin-bottom: 30px;
+}
+
+
+
+
+
+
+//**************************
+//     MEDIA QUERIES
+//**************************
+
+// 	Breakpoint Mobile //
+
+@media (max-width: 540px) {
+
+	h1 {
+		font-size: 62px;
+		font-weight: normal;
+		word-spacing: 15px;
+		line-height: 80px;
+	}
+	
+}
+
+
+@media (max-width: 400px) {
+	
+	img.divider {
+		width: 90%;
+	}
+}
+
+@media (max-width: 320px) {
+
+	h1 {
+		font-size: 50px;
+		font-weight: normal;
+		word-spacing: 15px;
+		line-height: 70px;
+	}
+	
+	
+}

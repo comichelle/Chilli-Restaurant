@@ -1,0 +1,77 @@
+/********************************
+			 ABOUT 
+********************************/
+
+.about_us {
+	padding: 80px 0;
+}
+
+.about {
+	display: flex;
+	flex-direction: row;
+}
+
+.about_text {
+	padding: 0 40px;
+	padding-top: 100px;
+	text-align: center;
+}
+
+p.about_content {
+	line-height: 20px;
+}	
+
+img.divider_about {
+	margin: 20px 0;
+}
+
+img.image_about{
+	width: 100%;
+}
+
+
+
+
+
+
+//**************************
+//     MEDIA QUERIES
+//**************************
+
+@media (max-width: 890px) {
+	.about {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.about_text {
+		padding-top: 0px;
+		padding-bottom: 30px;
+	}
+
+	img.image_about {
+		width: 52%;
+		margin: 0 auto;
+	}
+
+
+}
+
+
+// 	Breakpoint Mobile //
+
+@media (max-width: 540px) {
+img.image_about {
+		width: 100%;
+		margin: 0 auto;
+	}	
+	
+}
+
+@media (max-width: 450px) {
+	img.divider_about {
+		width: 90%;
+	}
+	
+}
+

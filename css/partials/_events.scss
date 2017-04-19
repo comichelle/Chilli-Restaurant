@@ -1,0 +1,110 @@
+/********************************
+		   EVENTS PAGE
+********************************/
+
+.main {
+	padding: 80px 20px;
+}
+
+h6 {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 800;
+	font-size: 28px;
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+
+.wrapper_main, .wrapper_content {
+	max-width: 700px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+
+img.main_img {
+	width: 100%;
+}
+
+.wrapper_content p {
+	margin: 25px 0;
+	line-height: 22px;
+}
+
+.wrapper_content ul {
+	padding: 0;
+}
+
+.wrapper_content ul li {
+	display: inline-block;
+	padding-right: 15px;
+}
+
+.wrapper_content .icons {
+	padding-right: 8px;
+}
+
+.divider_event {
+	margin: 30px 0 30px 0;
+}
+
+/******* MAP ********/
+
+iframe {
+	width: 100%;
+	height: 300px;
+	margin-top: 40px;
+}
+
+
+/******* BUTTONS ********/
+
+.event_buttons {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.event_buttons button {
+	background-color: #fff;
+	float: right;
+	font-weight: 600;
+	text-transform: uppercase;
+	cursor: pointer;
+	width: 160px;
+	height: 45px;
+	border: 3px solid black;
+	margin-top: 25px;
+} 
+
+.event_buttons button:hover {
+	transition: all 0.2s ease-in-out;
+	background-color: #000;
+	color: inherit;
+}
+
+
+
+
+
+//**************************
+//     MEDIA QUERIES
+//**************************
+
+@media (max-width: 435px) {
+	img.divider_event {
+		width: 90%;
+	}
+	
+}
+
+
+@media (max-width: 400px) {
+	.event_buttons {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	
+}

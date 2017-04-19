@@ -1,0 +1,302 @@
+/********************************
+			HEADER 
+********************************/
+
+header {
+	background-image: url("../assets/home_page/hero.jpg");
+	background-size: cover;
+	height: 100vh;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+/****** Top Bar ******/
+
+.top_nav {
+	background-color: #000;
+	color: $lightgrey;	
+	height: 40px;
+	font-size: 12px;
+	padding: 10px 0;
+	text-align: center;
+}
+
+.top {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	// align-items: center;
+}
+
+.contact_top ul {
+	display: flex;
+	flex-direction: row;
+}
+
+.contact_top ul li {
+	display: flex;
+	flex-direction: row;
+	margin-right: 25px;
+}
+
+.contact_top ul li:last-child {
+	margin-right: 0px;
+}
+
+
+.contact_top p {
+	margin-left: 10px;
+}
+
+
+
+/****** Menu ******/
+
+.hamburger{
+  display: none;
+}
+
+.hide {
+	top: -800px;
+}
+
+
+.site_menu {
+	background-color: rgba(0, 0, 0, 0.5);
+	color: $white; 
+	padding: 20px 0;
+}
+
+.menu {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	// align-items: center;
+}
+
+
+nav {
+	margin-top: 10px;	
+	font-size: 14px;
+	color: $white;
+	text-transform: uppercase;
+}
+
+nav a:hover {
+	transition: all 0.2s ease-in-out;
+	color: #ff514a;
+}
+
+nav ul li {
+	display: inline-block;
+	margin-left: 35px;
+}
+
+
+
+/****** Content Middle ******/
+
+.welcome p {
+	float: left;
+	margin-top: 12px;	
+	font-size: 12px;
+	color: #939393;
+}
+
+.text_feature {
+	color: $white;
+	text-align: center;
+	margin-top: 180px;	//change hiehgt for responsive
+	padding: 0 20px;
+}
+
+.text_feature img.since {
+	margin-bottom: 20px;
+}
+
+.header_text_inline:before {
+    content: "-------------------";
+    letter-spacing: -3px;
+    height: 5px;
+    vertical-align: top;
+    color: white;
+	margin-right: 15px;
+}
+
+.header_text_inline:after {
+    content: "-------------------";
+    letter-spacing: -3px;
+    height: 5px;
+    vertical-align: top;
+    color: white;
+
+}
+
+ul.header_text_inline li {
+	display: inline-block;
+	margin: 0 8px; 
+	text-transform: uppercase;
+	font-size: 18px; 
+}
+
+.header_text_inline {
+	margin-top: -10px;
+}
+
+.text_feature img.spring {
+	margin-top: 25px;
+}
+
+
+
+
+
+
+//**************************
+//     MEDIA QUERIES
+//**************************
+
+
+@media (max-width: 1060px) {
+
+	/****** Top Bar ******/
+	.top_nav {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	/****** Menu ******/
+	.site_menu {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+}
+
+
+
+
+// 	Breakpoint Mobile //
+
+@media (max-width: 540px) {
+
+	/****** Top Bar ******/
+
+	.top_nav {
+		height: 60px;
+	}
+	.top {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.contact_top ul li {
+		margin-right: 10px;
+	}
+
+
+	.contact_top {
+		margin-top: 10px;
+	}
+
+
+	nav {
+		transition: all 0.8s;
+		position: fixed;
+		display: initial;
+		left: 0px;
+		margin-top: 0px;	
+		font-size: 16px;
+		color: $white;
+		padding: 100px 0;
+		top: 0;
+		z-index:1000000;
+		font-weight: 600;
+		width:100vw;
+		height: 100vh;
+		background: rgba(0,0,0,0.9); 
+		text-align: center;
+	}
+
+		nav ul li {
+		display: block;
+		margin: 50px 0px;
+	}
+
+	//-----------------------------
+	//			HAMBURGER
+	//-----------------------------
+	.hamburger{
+		display: inherit;
+		background: none;
+		color: $white;
+		border: 0;
+		outline: none;
+		font-size: 1.4em;
+		font-weight: bold;
+		cursor:pointer;
+		z-index:10000000000000;
+	}
+
+	/****** Content Middle ******/
+	
+	.text_feature {
+		margin-top: 160px;	//change hiehgt for responsive
+		padding: 0 20px;
+	}
+	
+	
+}
+
+@media (max-width: 450px) {
+	ul.header_text_inline li {
+		margin: 0 5px; 
+		text-transform: uppercase;
+		font-size: 15px; 
+	}
+
+	.header_text_inline {
+		margin-top: 0px;
+	}
+	
+}
+
+@media (max-width: 380px) {
+
+	.top_nav {
+		font-size: 10px;
+	}
+
+	.header_text_inline:before {
+	    content: none;
+	}
+
+	.header_text_inline:after {
+	    content: none;
+	}
+
+	.text_feature {
+		margin-top: 80px;	//change hiehgt for responsive
+		padding: 0 20px;
+	}
+	
+}
+
+@media (max-width: 320px) {
+	/****** Content Middle ******/
+	
+
+	ul.header_text_inline li {
+		margin: 0 5px; 
+		text-transform: uppercase;
+		font-size: 12px; 
+	}
+
+	.header_text_inline {
+		margin-top: 0px;
+	}
+
+
+}

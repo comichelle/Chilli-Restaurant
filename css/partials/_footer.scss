@@ -1,0 +1,271 @@
+
+/********************************
+			FOOTER 
+********************************/
+
+.footer {
+	clear: both;
+
+}
+
+
+/****** TOP FOOTER ******/
+
+.top_footer {
+	background-image: url("../assets/footer/footer-background.jpg");
+	text-align: center;	
+	color: $white;
+	padding: 60px 0;
+}
+
+.welcome_head {
+	text-transform: uppercase;
+	font-size: 20px;
+	margin: 20px 0;	
+}
+
+p.footer_content {
+	padding: 0 150px;
+	margin: 0 auto;
+	line-height: 22px;
+}
+
+
+
+
+/****** MIDDLE FOOTER ******/
+
+.middle_footer {
+	background-color: $footerMiddle;
+	color: $lightgrey;
+	padding: 30px 0;
+}
+
+.middle {
+	display: flex;
+	flex-direction: row;
+}
+
+.hours {
+	color: $white;
+}
+
+.footer_column  {
+	width: 33.3%;
+	padding: 0 25px;
+}
+
+.footer_column:first-child  {
+	padding-left: 35px;
+}
+
+
+.footer_column p {
+	line-height: 20px;
+}
+
+.footer_column ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 15px;
+}
+
+.footer_column_address {
+	padding-left: 30px;
+}
+
+.footer_column_address ul li {
+	margin-bottom: 15px;
+}
+
+
+.footer_column_address i.fa {
+	color: white;
+	width: 15px;
+}
+
+span {
+	margin-left: 30px;
+}
+
+
+
+
+/******* FORM AND BUTTON *******/
+
+.footer_column form {
+	margin-top: 30px;
+}
+
+.footer_column input {
+	width: 240px;
+	height: 38px;
+	border: none;
+}
+
+
+.email_newletter input.email {
+	font-size: 12px;
+	font-style: italic;
+	padding-left: 10px;
+	color: $lightgrey;
+	margin: 0;
+}
+
+footer button {
+	background-color: $red;
+	cursor: pointer;
+	width: 45px;
+	height: 38px;
+	border: none;
+	outline: none;
+	color: $white;
+	font-size: 12px;
+}
+
+input[type="email"].email::-webkit-input-placeholder {
+	color: $lightgrey;
+}
+
+
+
+/****** BOTTOM FOOTER ******/
+
+.bottom_footer {
+	background-color: $footerBottom;
+	padding: 50px 0;
+}
+
+p.copyright {
+	margin: 0;
+	margin-bottom: 5px;
+}
+
+.social_media {
+	font-size: 13px;
+	color: $copyright;
+	text-align: center;
+}
+
+.social_media ul  {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.social_media ul li {
+	// display: inline-block;
+	margin-top: 20px;
+}
+
+.social_media  li {
+	background-color: rgba(255, 255, 255, 0.03);
+	font-size: 14px;
+	border-radius: 50%;
+	padding: 10px 15px;
+	margin: 0 3px;
+}
+
+.social_media i {
+	font-size: 14px;
+	color: $white;
+}
+
+span.theme {
+	margin: 0;
+	padding: 0;
+	color: $white;
+}
+
+footer ul li a i {
+	transition: all 0.2s ease-in-out;
+}
+
+footer ul li a i:hover {
+  color: $red;
+  opacity: 0.7;
+}
+
+
+
+
+//**************************
+//     MEDIA QUERIES
+//**************************
+
+
+
+
+@media (max-width: 880px) {
+	p.footer_content {
+		padding: 0 90px;
+	}
+
+	.middle {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.footer_column  {
+		width: 70%;
+		margin: 0 auto;
+		margin-top: 50px;
+		padding-left: 35px;
+	}
+
+	.footer_column_address {
+		width: 70%;
+		margin: 0 auto;
+		margin-top: 50px;
+		padding-left: 35px;
+	}
+}
+
+
+
+
+// 	Breakpoint Mobile //
+
+@media (max-width: 540px) {
+	p.footer_content {
+		padding: 0 40px;
+	}
+
+	.footer_column  {
+		width: 80%;
+		margin: 0 auto;
+		margin-top: 50px;
+		padding: 0px;
+	}
+
+	.footer_column:first-child  {
+		padding-left: 0px;
+	}
+
+	.footer_column_address {
+		width: 80%;
+		margin: 0 auto;
+		margin-top: 50px;
+		padding:  0px;
+	}
+	
+}
+
+
+
+@media (max-width: 380px) {
+	.footer_column  {
+		width: 90%;
+	}
+
+	.footer_column_address {
+		width: 90%;
+	}
+
+	.bottom_footer {
+		padding: 50px 20px;
+	}
+	
+}
+
